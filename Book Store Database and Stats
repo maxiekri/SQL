@@ -1,0 +1,27 @@
+/*Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want
+store to specialize in. You should have a table for all the items in your store, and at least 5 columns
+for the kind of data ytou think you'd need to store. You should sell at least 15 items and use select
+statements to order your items by price and show at least one statistic about the items.*/
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, item_title TEXT, item_author TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO books VALUES (1,"LoveCraft Country", "Matt Ruff",17.99, 5);
+INSERT INTO books VALUES (2,"THE GIVER", "Lois Lowry", 7.99,7);
+INSERT INTO books VALUES (3, "Calling My Name", "Liara Tamani",13.99, 4);
+INSERT INTO books VALUES (4, "Long Way Down", "Jason Reynolds", 4.79, 3);
+INSERT INTO books VALUES (5, "The Black Girls Left Standing", "Juliana Goodman", 5.79, 5);
+INSERT INTO books VALUES (6, "You Should See Me in a Crown", "Leah Johnson", 4.50,4);
+INSERT INTO books VALUES (7, "Every Body Looking", "Candice IIoh", 7.50,1);
+INSERT INTO books VALUES (8, "Shine", "Lauren Myracle", 10.00, 4);
+INSERT INTO books VALUES (9, "The Realm of Possibility", "Jennifer Latham", 7.99,2);
+INSERT INTO books VALUES (10, "American Street", "Ibi Zoboi", 15.99,  3);
+INSERT INTO books VALUES (11, "We Are Not Free", "Traci Chee", 19.99, 9);
+INSERT INTO books VALUES (12, "My Heart and Other Black Holes", "Jasmine Warga",4.57, 1);
+INSERT INTO books VALUES (13, "On the Come Up", "Angie Thomas", 17.99, 7);
+INSERT INTO books VALUES (14, "The Hate U Give", "Angie Thomas", 18.00, 4);
+INSERT INTO books VALUES (15, "X", "IIyasah Shabazz", 14.99, 5); 
+
+SELECT * FROM books
+ORDER BY price;
+
+SELECT SUM(quantity) FROM books;
